@@ -10,6 +10,7 @@ if (logout != null && logout.equals("true")) {
 } else {
 	// GETパラメータから「メッセージ」を取り出す
 	message = (String) request.getParameter("message");
+	
 	if (message != null) {
 		// 「メッセージ」が送信されていたので、セッションに保存
 		session.setAttribute("message", message);
